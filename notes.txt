@@ -1,0 +1,53 @@
+C:\Users\Baconinja\Documents\_baconinja\_react\HelloReact>
+
+1. run "node server.js"
+
+2. localhost 3000
+
+Notes:
+- form onSubmit method always expects a function
+
+Video 16 - Nested Components
+
+State can be changed, Props can't!
+
+Component types
+0. Container - maintains the state, renders the children
+1. Presentation - like GreeterMessage
+Should never maintain state. Just render and call functions.
+2. Input - gets user input from controls
+
+Naming convention when passing Props as Functions to things like Forms..
+
+<GreeterForm onNewName={this.handleNewName}/>
+
+handle = function
+on = handler
+name = NewName
+
+What is Webpack? (And Installing It)
+Section 4, Lecture 19
+https://www.udemy.com/the-complete-react-web-app-developer-course/learn/v4/t/lecture/4579162?start=0
+Important for setting up new project for componentized development!
+Note: Webpack treats EVERY file as an island, so you need to reference as follows:
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+Create webpack config file to simplify things to use babel, react, ES6
+file: webpack.config.js
+
+Building the file:
+C:\Users\Baconinja\Documents\_baconinja\_react\HelloReact>webpack
+Hash: f7176674dcf58304fc68
+Version: webpack 1.12.13
+Time: 64ms
+             Asset     Size  Chunks             Chunk Names
+./public/bundle.js  1.65 kB       0  [emitted]  main
+   [0] ./public/app.js 62 bytes {0} [built]
+    + 1 hidden modules
+
+C:\Users\Baconinja\Documents\_baconinja\_react\HelloReact>node server.js
+Express server is up on port 3000
+
+!! Learn React Router tools !!
+meetup?
