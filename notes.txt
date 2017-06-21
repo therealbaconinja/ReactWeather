@@ -52,5 +52,11 @@ Express server is up on port 3000
 !! Learn React Router tools !!
 meetup?
 
-Heroku
+Deploy to Git and Heroku
+webpack to generate any hidden files first!!
+git commit -am
+git push origin master
 git push heroku master
+
+Section 7 - Foundation
+npm install css-loader@0.23.1 script-loader@0.6.1 style-loader@0.13.0 jquery@2.2.1 --save-dev
