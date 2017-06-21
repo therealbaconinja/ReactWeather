@@ -25,7 +25,10 @@ var React = require('react');
 //3. REDUCE FURTHER WITH ARROW FUNCTIONS!
 var About = (props) => {
   return (
-    <h3>About Component</h3>
+    <div>
+      <h3>About</h3>
+      <p>This is the about page.</p>
+    </div>
   )
 };
 
