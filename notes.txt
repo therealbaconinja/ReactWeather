@@ -51,3 +51,6 @@ Express server is up on port 3000
 
 !! Learn React Router tools !!
 meetup?
+
+Heroku
+git push heroku master
