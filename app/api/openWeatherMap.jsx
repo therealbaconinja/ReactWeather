@@ -13,6 +13,7 @@ module.exports = {
     var requestURL = `${OPEN_WEATHER_MAP_URL}&q=${encodedLocation}`;
 
     //chain promises to pass along data using return
+
     return axios.get(requestURL).then(function (res) {
       //debugger;
       if (res.data.cod && res.data.message) {
@@ -23,5 +24,17 @@ module.exports = {
     }, function (res) {
       throw new Error('Unable to fetch weather.');
     });
+
+    /*
+    return axios.get(requestURL).then(function (res) {
+      if (res.data.cod && res.data.message) {
+        throw new Error(res.data.message);
+      } else {
+        return res.data.main.temp;
+      }
+    }, function (res) {
+      throw new Error(res.data.message);
+    });
+    */
   }
 }
