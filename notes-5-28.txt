@@ -44,3 +44,19 @@ this is a good place to instantiate the network request. Setting state in this m
 
 PROP TYPES VALIDATION CHANGES
 https://facebook.github.io/react/docs/typechecking-with-proptypes.html
+
+CSS - SCSS
+Install node sass and loader
+
+C:\Users\Baconinja\Documents\_baconinja\_react\ReactWeather>npm install sass-loa
+der@3.1.2 node-sass@3.4.2 --save-dev
+
+SCSS / Sass
+SCSS SYNTAX
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
