@@ -14,6 +14,9 @@ var Examples = require('Examples');
 // Load Foundation or Bootstrap
 //css! loader chained with style loader
 require('style!css!foundation-sites/dist/foundation.min.css');
+//App css
+require('style!css!applicationStyles');
+
 $(document).foundation();
 
 ReactDOM.render(
